@@ -1,0 +1,192 @@
+/* Add application styles & imports to this file! */
+
+body {
+  font-family: 'RobotoRegular', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+
+my-app {
+  display: block;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+my-app > .k-icon.k-i-loading {
+  font-size: 64px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.example-wrapper {
+  min-height: 280px;
+  align-content: flex-start;
+}
+
+.example-wrapper p,
+.example-col p {
+  margin: 0 0 10px;
+}
+
+.example-wrapper p:first-child,
+.example-col p:first-child {
+  margin-top: 0;
+}
+
+.example-col {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.example-config {
+  margin: 0 0 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.event-log {
+  margin: 0;
+  padding: 0;
+  max-height: 100px;
+  overflow-y: auto;
+  list-style-type: none;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+}
+
+.event-log li {
+  margin: 0;
+  padding: 0.3em;
+  line-height: 1.2em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.event-log li:last-child {
+  margin-bottom: -1px;
+}
+
+body {
+  --text-color: white;
+  --primary: blue;
+  --secondary-color: rgb(217, 217, 217);
+  --background-base: rgb(32, 32, 32);
+  --background-foreground: black;
+
+  --kendo-grid-text: var(--text-color);
+  --kendo-table-text: var(--text-color);
+  --kendo-grid-header-bg: var(--background-base);
+  --kendo-grid-header-text: var(--text-color);
+  --kendo-table-header-text: var(--text-color);
+  /* //--kendo-table-header-text:red; */
+  --kendo-table-header-bg: var(--kendo-grid-header-bg);
+  /* --kendo-grid-border: red; */
+  /* //--kendo-grid-header-border:red; */
+  --kendo-grid-hover-text: var(--text-color);
+  --kendo-table-alt-row-bg: var(--background-base);
+  --kendo-grid-hover-bg: var(--background-base);
+  --kendo-grid-bg: var(--background-foreground);
+  --kendo-grid-sorted-bg: transparent;
+  --kendo-grid-sort-indicator-order-text: var(--text-color);
+  --kendo-grid-sort-indicator-text: var(--secondary-color);
+  /* --kendo-table-selected-bg: var(--primary); */
+  /* --kendo-grid-selected-bg: var(--primary); */
+  /* --kendo-grid-selected-text: var(--primary); */
+  --kendo-table-selected-text: var(--primary);
+  /* --kendo-body-text: red; */
+  /* --kendo-grid-hover-text: var(--text-color); */
+
+  /* --kendo-base-text: var(--text-color);
+  --kendo-base-bg: var(--background-foreground);
+  --kendo-hover-text: var(--text-color);
+  --kendo-hover-bg: var(--background-foreground);
+  --kendo-selected-text: var(--text-color);
+  --kendo-selected-bg: #ff6358;
+  --kendo-button-text: var(--text-color);
+  --kendo-button-bg: var(--background-foreground); */
+
+  --kendo-body-text: var(--text-color);
+  --kendo-body-bg: var(--background-foreground);
+  --kendo-subtle-text: #e0e0e0;
+  --kendo-disabled-text: #d0d0d0;
+  --kendo-component-text: var(--text-color);
+  --kendo-component-bg: #101010;
+  --kendo-base-text: var(--text-color);
+  --kendo-base-bg: red;
+  --kendo-hover-text: var(--text-color);
+  --kendo-hover-bg: #202020;
+  --kendo-selected-text: var(--text-color);
+  --kendo-selected-bg: #ff6358;
+  --kendo-button-text: var(--text-color);
+  --kendo-button-bg: #404040;
+  --kendo-link-text: #ff6358;
+  --kendo-link-hover-text: #d6534a;
+  --kendo-series-a: #ff6358;
+  --kendo-series-b: #ffe162;
+  --kendo-series-c: #4cd180;
+  --kendo-series-d: #4b5ffa;
+  --kendo-series-e: #ac58ff;
+  --kendo-series-f: #ff5892;
+
+  --tb-kendo-border-radius: 2px;
+  --tb-kendo-is-dark-theme: true;
+  --tb-kendo-color-primary: #ff6358;
+  --tb-kendo-color-secondary: #f6f6f6;
+  --tb-kendo-color-info: #3e80ed;
+  --tb-kendo-color-success: #5ec232;
+  --tb-kendo-color-warning: #fdce3e;
+  --tb-kendo-color-error: #d51923;
+  --tb-kendo-body-bg: #000000;
+  --tb-kendo-body-text: #ffffff;
+  --tb-kendo-heading-text: #ffffff;
+  --tb-kendo-subtle-text: #e0e0e0;
+  --tb-kendo-disabled-text: #d0d0d0;
+  --tb-kendo-component-bg: #101010;
+  --tb-kendo-component-text: var(--tb-kendo-body-text);
+  --tb-kendo-base-bg: #151515;
+  --tb-kendo-base-text: var(--tb-kendo-body-text);
+  --tb-kendo-hover-bg: #151515;
+  --tb-kendo-hover-text: var(--tb-kendo-base-text);
+  --tb-kendo-selected-bg: var(--tb-kendo-color-primary);
+  --tb-kendo-selected-text: #ffffff;
+  --tb-kendo-button-bg: #404040;
+  --tb-kendo-button-text: #ffffff;
+  --tb-kendo-link-text: var(--tb-kendo-color-primary);
+  --tb-kendo-link-hover-text: #d6534a;
+  --tb-kendo-series-a: #ff6358;
+  --tb-kendo-series-b: #ffe162;
+  --tb-kendo-series-c: #4cd180;
+  --tb-kendo-series-d: #4b5ffa;
+  --tb-kendo-series-e: #ac58ff;
+  --tb-kendo-series-f: #ff5892;
+
+  --kendo-border-radius: var(--tb-kendo-border-radius);
+  --kendo-is-dark-theme: var(--tb-kendo-is-dark-theme);
+  --kendo-color-primary: var(--tb-kendo-color-primary);
+  --kendo-color-secondary: var(--tb-kendo-color-secondary);
+  --kendo-color-info: var(--tb-kendo-color-info);
+  --kendo-color-success: var(--tb-kendo-color-success);
+  --kendo-color-warning: var(--tb-kendo-color-warning);
+  --kendo-color-error: var(--tb-kendo-color-error);
+  /* --kendo-body-bg: var(--tb-kendo-body-bg); */
+  /* --kendo-body-text: var(--tb-kendo-body-text); */
+  --kendo-heading-text: var(--tb-kendo-heading-text);
+  /* --kendo-subtle-text: var(--tb-kendo-subtle-text);
+  --kendo-disabled-text: var(--tb-kendo-disabled-text);
+  --kendo-component-bg: var(--tb-kendo-component-bg);
+  --kendo-component-text: var(--tb-kendo-component-text);
+  --kendo-base-bg: var(--tb-kendo-base-bg);
+  --kendo-base-text: var(--tb-kendo-base-text);
+  --kendo-hover-bg: var(--tb-kendo-hover-bg);
+  --kendo-hover-text: var(--tb-kendo-hover-text);
+  --kendo-selected-bg: var(--tb-kendo-selected-bg);
+  --kendo-selected-text: var(--tb-kendo-selected-text);
+  --kendo-button-bg: var(--tb-kendo-button-bg);
+  --kendo-button-text: var(--tb-kendo-button-text);
+  --kendo-link-text: var(--tb-kendo-link-text);
+  --kendo-link-hover-text: var(--tb-kendo-link-hover-text); */
+}
